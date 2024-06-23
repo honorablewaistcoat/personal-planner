@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Personal Planner</h1>
+    </header>
+    
+    <main>
+        <section id="task-manager">
+            <h2>Task Manager</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <form id="schedule-form">
+                <input type="datetime-local" id="schedule-input" required>
+                <input type="text" id="schedule-task" placeholder="Schedule a task" required>
+                <button type="submit">Add to Schedule</button>
+            </form>
+            <ul id="schedule-list"></ul>
+        </section>
+
+        <section id="notes">
+            <h2>Notes</h2>
+            <textarea id="notes-input" placeholder="Write your notes here"></textarea>
+            <button id="save-notes">Save Notes</button>
+        </section>
+
+        <section id="habit-tracker">
+            <h2>Habit Tracker</h2>
+            <form id="habit-form">
+                <input type="text" id="habit-input" placeholder="Add a new habit" required>
+                <button type="submit">Add Habit</button>
+            </form>
+            <ul id="habit-list"></ul>
+        </section>
+
+        <section id="brain-dump">
+            <h2>Brain Dump</h2>
+            <textarea id="brain-dump-input" placeholder="Dump your unsorted tasks here"></textarea>
+            <button id="save-brain-dump">Save</button>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
